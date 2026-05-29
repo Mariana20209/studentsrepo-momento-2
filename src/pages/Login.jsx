@@ -1,93 +1,80 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
-import Swal from "sweetalert2";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
+import { end_points } from "../services/api"
+import { redirectAlert } from "../helpers/alerts"
+import { saveLocalStorage } from "../helpers/local-storage"
+import { generateToken } from "../helpers/generators"
+import Header from "../components/Header"
+import Footer from "../components/Footer"
 import bgImage from "../assets/images/marca.png";
 
 function Login() {
-  const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [user, setUser] = useState("")
+  const [password, setPassword] = useState("")
+  const [users, setUsers] = useState([])
 
-  const handleLogin = (event) => {
-    event.preventDefault();
+  function getUsers() {
+    fetch(end_points.users)
+      .then((res) => res.json())
+      .then((data) => setUsers(data))
+      .catch((err) => console.log(err))
+  }
 
-    if (!email || !password) {
-      Swal.fire({
-        icon: "error",
-        title: "Campos vacíos",
-        text: "Debes completar todos los campos",
-      });
-      return;
+  useEffect(() => { getUsers() }, [])
+
+  function findUser() {
+    return users.find(
+      (item) => user === item.username && password === item.password
+    )
+  }
+
+  function signIn(e) {
+    e.preventDefault()
+    if (!user || !password)
+      return redirectAlert("Campos vacíos", "Completa usuario y contraseña", "/login", "warning")
+    if (findUser()) {
+      saveLocalStorage("token", generateToken())
+      saveLocalStorage("user", findUser())
+      return redirectAlert("Bienvenido", "Serás redireccionado al dashboard", "/dashboard", "success")
     }
-
-    const registeredUser = JSON.parse(localStorage.getItem("registeredUser"));
-
-    if (
-      registeredUser &&
-      email === registeredUser.email &&
-      password === registeredUser.password
-    ) {
-      const sessionUser = {
-        name: registeredUser.name,
-        email: registeredUser.email,
-        isLogged: true,
-      };
-
-      localStorage.setItem("user", JSON.stringify(sessionUser));
-
-      Swal.fire({
-        icon: "success",
-        title: "Inicio de sesión exitoso",
-        text: `Bienvenida, ${registeredUser.name}`,
-      });
-
-      navigate("/dashboard");
-    } else {
-      Swal.fire({
-        icon: "error",
-        title: "Credenciales inválidas",
-        text: "Correo o contraseña incorrectos",
-      });
-    }
-  };
+    return redirectAlert("Error", "Usuario o contraseña incorrectos", "/login", "error")
+  }
 
   return (
     <div className="app">
       <Header />
 
-      <main className="main-centered" style={{ backgroundImage: `url(${bgImage})` }}>
+      <main className="form-login-container" style={{
+        backgroundImage: `url(${bgImage})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        flex: 1
+      }}>
         <div className="login-card">
-          <h2 className="login-titulo">Acceder</h2>
-
-        <form className="form" onSubmit={handleLogin}>
-          <input
-            type="email"
-            placeholder="Correo electrónico"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
-
-          <input
-            type="password"
-            placeholder="Contraseña"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-
-          <button type="submit" className="login-btn">Acceder</button> 
-        </form>
-
-        <p className="form-text">
-          ¿No tienes cuenta? <Link to="/register">Regístrate aquí</Link>
-        </p>
+          <h2 className="login-titulo">Iniciar sesión</h2>
+          <form className="form" onSubmit={signIn}>
+            <input
+              type="text"
+              placeholder="Usuario"
+              onChange={(e) => setUser(e.target.value)}
+            />
+            <input
+              type="password"
+              placeholder="Contraseña"
+              onChange={(e) => setPassword(e.target.value)}
+            />
+            <button type="submit" className="login-btn">Acceder</button>
+          </form>
+          <p className="form-text">
+            ¿No tienes cuenta? <Link to="/register">Regístrate</Link>
+          </p>
         </div>
       </main>
 
       <Footer />
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Login

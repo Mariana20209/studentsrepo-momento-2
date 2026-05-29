@@ -1,0 +1,387 @@
+{
+  "proyectos": [
+    {
+      "id": "1",
+      "titulo": "Aplicación de Videoclases",
+      "descripcion": "Sistema para transmitir clases en video y controlar usuarios.",
+      "area": "Desarrollo de Software",
+      "estado": "Aprobado",
+      "estudiante": "Mariana Suárez",
+      "fecha": "2026-05-01",
+      "archivoUrl": "https://drive.google.com/file/d/1qV7FreGJZGkXDJ4BO1ZR_gL6esDjPTQK/view?usp=drive_link"
+    },
+    {
+      "id": "2",
+      "titulo": "Aplicación de Tutorías",
+      "descripcion": "Plataforma para agendar y controlar asesorías académicas.  ",
+      "area": "Servicio al Cliente",
+      "estado": "Aprobado",
+      "estudiante": "Viadis Correa",
+      "fecha": "2026-05-05",
+      "archivoUrl": "https://drive.google.com/file/d/1mrTF4v3oOTBB9VNDmc4mtnxOE9E1hfCt/view?usp=sharing"
+    },
+    {
+      "id": "3",
+      "titulo": "Aplicación de Gestión de Tareas",
+      "descripcion": " Herramienta para asignar, entregar y calificar deberes escolares.",
+      "area": "Gestión de Proyectos",
+      "estado": "Aprobado",
+      "estudiante": "Santiago Uribe",
+      "fecha": "2026-05-08",
+      "archivoUrl": "https://drive.google.com/file/d/1ogIozDu7-5dvkfgcJdJoH4a0SoBcCiDT/view?usp=sharing"
+    },
+    {
+      "id": "4",
+      "titulo": "Repositorio de Proyectos Universitarios",
+      "descripcion": "Espacio digital para guardar y buscar trabajos de la universidad.",
+      "area": "Gestión Documental",
+      "estado": "Aprobado",
+      "estudiante": "Mariana Suárez",
+      "fecha": "2026-05-10",
+      "archivoUrl": "https://drive.google.com/file/d/1BKqF8QlBl4EkiqRx3RCdfokCNa7i9jtV/view?usp=sharing"
+    },
+    {
+      "id": "5",
+      "titulo": "Sistema de Notificaciones Académicas",
+      "descripcion": "Servicio para enviar alertas automáticas y mensajes a los usuarios.",
+      "area": "Servicio al Cliente",
+      "estado": "Aprobado",
+      "estudiante": "Viadis Correa",
+      "fecha": "2026-05-12",
+      "archivoUrl": "https://drive.google.com/file/d/1EqlGrXBZwErtbPp17gSb2ointcGsEiBC/view?usp=sharing"
+    },
+    {
+      "id": "6",
+      "titulo": "Aplicación de Biblioteca Virtual",
+      "descripcion": "Plataforma para la lectura y administración de libros digitales.",
+      "area": "Administración",
+      "estado": "Aprobado",
+      "estudiante": "Sebastian Urrego",
+      "fecha": "2026-05-15",
+      "archivoUrl": "https://drive.google.com/file/d/1Ttx6QQFFJvCz2x3J_V5f-ABQH8LSqgKq/view?usp=sharing"
+    },
+    {
+      "id": "7",
+      "titulo": "Gestor de Horarios Universitarios",
+      "descripcion": "Herramienta para organizar calendarios, salones y horas de clase.",
+      "area": "Logística y Operaciones",
+      "estado": "Aprobado",
+      "estudiante": "Esteban Castillo",
+      "fecha": "2026-05-20",
+      "archivoUrl": "https://drive.google.com/file/d/1OgKl3lqcq5nItv0qvi-OAZo9uleEwOvI/view?usp=sharing"
+    },
+    {
+      "id": "8",
+      "titulo": "Sistema de Gestión Académica",
+      "descripcion": "Sistema central para controlar notas, matrículas y datos de alumnos.",
+      "area": "Administración",
+      "estado": "Aprobado",
+      "estudiante": "Kevin Gómez",
+      "fecha": "2026-05-25",
+      "archivoUrl": "https://drive.google.com/file/d/1A-wbX7gWeuMd-ScUIrhSjhJwETDKVX8B/view?usp=sharing"
+    },
+    {
+      "id": "9",
+      "titulo": "Plataforma de Cursos Virtuales",
+      "descripcion": "Sistema orientado a mejorar procesos tecnológicos dentro de instituciones educativas mediante módulos de usuarios, autenticación, dashboards y administración de contenido.",
+      "area": "Tecnología Educativa",
+      "estado": "Aprobado",
+      "estudiante": "Daniel Castro",
+      "fecha": "2026-05-27",
+      "archivoUrl": "https://drive.google.com/file/d/1cTOrWRUubsjfu4QCIQn4zZbFwqCM_FmV/view?usp=sharing"
+    },
+    {
+      "id": "10",
+      "titulo": "Repositorio de Proyectos Universitarios",
+      "descripcion": "Plataforma académica para gestionar y compartir proyectos universitarios con funcionalidades de autenticación, dashboards y administración de contenido.",
+      "area": "Desarrollo de Software",
+      "estado": "Aprobado",
+      "estudiante": "Daniel Castro",
+      "fecha": "2026-05-27",
+      "archivoUrl": "https://drive.google.com/file/d/1cTOrWRUubsjfu4QCIQn4zZbFwqCM_FmV/view?usp=sharing"
+    },
+    {
+      "id": "11",
+      "titulo": "Aplicación de Gestión de Tareas",
+      "descripcion": "Aplicación enfocada en mejorar la gestión de tareas académicas y tecnológicas dentro de instituciones educativas.",
+      "area": "Productividad",
+      "estado": "Aprobado",
+      "estudiante": "Andrés Torres",
+      "fecha": "2026-05-27",
+      "archivoUrl": "https://drive.google.com/file/d/1Z-yf7hRWGUHM0H6uFEDj0HikJI0WI4Ua/view?usp=sharing"
+    },
+    {
+      "id": "12",
+      "titulo": "Repositorio de Investigaciones",
+      "descripcion": "Sistema para almacenar y administrar investigaciones académicas con módulos de usuarios, autenticación y dashboards.",
+      "area": "Investigación Académica",
+      "estado": "Aprobado",
+      "estudiante": "Valentina Rojas",
+      "fecha": "2026-05-27",
+      "archivoUrl": "https://drive.google.com/file/d/1F6F0eZtXZBqi4OLLS563LQmSScBh3YMq/view?usp=sharing"
+    },
+    {
+      "id": "13",
+      "titulo": "Aplicación de Biblioteca Virtual",
+      "descripcion": "Sistema orientado a mejorar procesos tecnológicos dentro de instituciones educativas mediante módulos de usuarios, autenticación, dashboards y administración de contenido.",
+      "area": "Tecnología Educativa",
+      "estado": "Aprobado",
+      "estudiante": "Miguel Herrera",
+      "fecha": "2026-05-27",
+      "archivoUrl": "https://drive.google.com/file/d/16VNjjlrj4OKSoF5gRFjSxAXUDB3sGuHp/view?usp=sharing"
+    },
+    {
+      "titulo": "Error",
+      "descripcion": "Paginna no sirve",
+      "area": "Desarrollo de Software",
+      "estado": "Pendiente",
+      "estudiante": "Viadis Correa",
+      "fecha": "2026-05-27",
+      "archivoUrl": "",
+      "id": "jK_wsZ00DTs"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "username": "jtorres",
+      "fullName": "Juan Torres",
+      "email": "juan.torres@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "username": "mariana",
+      "fullName": "Mariana Suárez",
+      "email": "mariana@cesde.com",
+      "role": "admin",
+      "password": "Admin2026!"
+    },
+    {
+      "id": "3",
+      "username": "viadis",
+      "fullName": "Viadis Correa",
+      "email": "viadis@cesde.com",
+      "role": "admin",
+      "password": "Admin2026!"
+    },
+    {
+      "id": "4",
+      "username": "santiago",
+      "fullName": "Santiago Urrego",
+      "email": "santiago@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "5",
+      "username": "dcastro",
+      "fullName": "Daniel Castro",
+      "email": "daniel.castro@cesde.com",
+      "role": "administrador",
+      "password": "12345"
+    },
+    {
+      "id": "6",
+      "username": "andrest",
+      "fullName": "Andrés Torres",
+      "email": "andres.torres@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "7",
+      "username": "vrojas",
+      "fullName": "Valentina Rojas",
+      "email": "valentina.rojas@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "8",
+      "username": "mherrera",
+      "fullName": "Miguel Herrera",
+      "email": "miguel.herrera@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "9",
+      "username": "sramirez",
+      "fullName": "Santiago Ramírez",
+      "email": "santiago.ramirez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "10",
+      "username": "alopez",
+      "fullName": "Ana López",
+      "email": "ana.lopez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "11",
+      "username": "jmartinez",
+      "fullName": "José Martínez",
+      "email": "jose.martinez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "12",
+      "username": "cmoreno",
+      "fullName": "Carlos Moreno",
+      "email": "carlos.moreno@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "13",
+      "username": "nvelez",
+      "fullName": "Natalia Vélez",
+      "email": "natalia.velez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "14",
+      "username": "farias",
+      "fullName": "Felipe Arias",
+      "email": "felipe.arias@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "15",
+      "username": "jcardona",
+      "fullName": "Juliana Cardona",
+      "email": "juliana.cardona@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "16",
+      "username": "mrodriguez",
+      "fullName": "Mateo Rodríguez",
+      "email": "mateo.rodriguez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "17",
+      "username": "lgarcia",
+      "fullName": "Laura García",
+      "email": "laura.garcia@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "18",
+      "username": "dtorres",
+      "fullName": "David Torres",
+      "email": "david.torres@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "19",
+      "username": "pquintero",
+      "fullName": "Paula Quintero",
+      "email": "paula.quintero@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "20",
+      "username": "rruiz",
+      "fullName": "Ricardo Ruiz",
+      "email": "ricardo.ruiz@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "21",
+      "username": "csanchez",
+      "fullName": "Carolina Sánchez",
+      "email": "carolina.sanchez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "22",
+      "username": "jgomez",
+      "fullName": "Julián Gómez",
+      "email": "julian.gomez@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "23",
+      "username": "marias",
+      "fullName": "María Salazar",
+      "email": "maria.salazar@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "24",
+      "username": "hgil",
+      "fullName": "Hernán Gil",
+      "email": "hernan.gil@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "25",
+      "username": "kmedina",
+      "fullName": "Karen Medina",
+      "email": "karen.medina@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "26",
+      "username": "ocastro",
+      "fullName": "Oscar Castro",
+      "email": "oscar.castro@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "27",
+      "username": "vpena",
+      "fullName": "Valeria Peña",
+      "email": "valeria.pena@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "28",
+      "username": "jvera",
+      "fullName": "Jhon Vera",
+      "email": "jhon.vera@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "29",
+      "username": "emora",
+      "fullName": "Esteban Mora",
+      "email": "esteban.mora@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    },
+    {
+      "id": "30",
+      "username": "aduran",
+      "fullName": "Alejandra Durán",
+      "email": "alejandra.duran@cesde.com",
+      "role": "estudiante",
+      "password": "12345"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

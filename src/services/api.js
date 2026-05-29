@@ -1,6 +1,7 @@
-export const API_BASE_URL = "https://jsonplaceholder.typicode.com";
+const URL_BASE = "http://localhost:3002/"
 
-export const ENDPOINTS = {
-  posts: "/posts",
-  users: "/users",
-};
+export const end_points = {
+  users: `${URL_BASE}usuarios`,
+  projects: `${URL_BASE}proyectos`,
+  candidates: `${URL_BASE}proyectos`,
+}
